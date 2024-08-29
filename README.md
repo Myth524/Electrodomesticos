@@ -1,5 +1,6 @@
 # Distributed Front-End Project
-Description
+
+## **Description**
 This project involves integrating cloud tools to create a product catalog for an appliance company. It also enables tracking performance metrics through Google Analytics.
 
 ## Features
