@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="Styles/app.css">
+    <script src="scripts/config.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.config && window.config.GOOGLE_ANALYTICS_ID) {
+                const googleAnalyticsId = window.config.GOOGLE_ANALYTICS_ID;
+
+                const script = document.createElement('script');
+                script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
+                script.async = true;
+                document.head.appendChild(script);
+
+                script.onload = function() {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', googleAnalyticsId);
+                };
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <h1>Los Electrodomésticos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="login.html">Inicio de sesión</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="product-list"></main>
+
+    <div id="product-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-detail-modal">&times;</span>
+            <div class="modal-detail-container">
+                <div class="modal-image">
+                    <img id="detail-product-image" src="" alt="Imagen del producto" />
+                </div>
+                <div class="modal-details">
+                    <h2 id="detail-product-name"></h2>
+                    <p id="detail-product-description"></p>
+                    <p id="detail-product-price"></p>
+                    <button id="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Los Electrodomésticos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>

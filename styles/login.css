@@ -1,0 +1,180 @@
+/** Estilos generales **/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    width: 360px; 
+    box-sizing: border-box; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px; 
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    background-color: #fff; 
+    color: #333; 
+    box-sizing: border-box; 
+    outline: none; 
+    transition: border-color 0.3s ease, background-color 0.3s ease; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6600; 
+}
+
+input[type="text"]:not(:focus),
+input[type="password"]:not(:focus) {
+    border-color: #ddd; 
+}
+
+input[type="text"]:focus ~ label,
+input[type="password"]:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -15px;
+    left: 12px;
+    font-size: 12px;
+    color: #ff6600; 
+    background-color: #fff; 
+    padding: 0 5px;
+}
+
+input[type="text"]:not(:focus):placeholder-shown ~ label,
+input[type="password"]:not(:focus):placeholder-shown ~ label {
+    top: 12px;
+    left: 12px;
+    font-size: 16px;
+    color: #999; 
+    background-color: transparent;
+}
+
+label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #999; 
+    font-size: 16px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+
+button {
+    width: 100%; 
+    padding: 12px; 
+    background-color: #ff6600; 
+    border: none;
+    color: white;
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+    box-sizing: border-box; 
+}
+
+button:hover {
+    background-color: #e55a00; 
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.register-link a {
+    color: #007bff; 
+    text-decoration: none;
+    font-size: 14px; 
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+.social-button {
+    width: 48%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease; 
+}
+
+.social-button img {
+    width: 30px; 
+    height: 30px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease; 
+}
+
+.social-button:hover img {
+    transform: scale(1.2); 
+}
+
+.social-button:hover {
+    opacity: 0.8; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; 
+        padding: 20px; 
+    }
+    
+    .social-buttons {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .social-button {
+        width: 80%; 
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%; 
+    }
+    
+    button {
+        font-size: 14px; 
+    }
+    
+    .social-button img {
+        width: 25px; 
+        height: 25px; 
+    }
+}

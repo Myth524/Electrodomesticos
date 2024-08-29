@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles/login.css">
+
+    <script src="scripts/config.js"></script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <input type="text" id="username" name="username" required placeholder=" ">
+                <label for="username">Usuario</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" required placeholder=" ">
+                <label for="password">Contraseña</label>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <div class="social-buttons">
+            <a id="google-login" class="social-button google-button" href="#">
+                <img src="https://imgs.search.brave.com/9UpQ3atG5l_GXzY07xbPdBccJoOVDyoYqYxInSG2hqA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yNTA0LzI1MDQ5/MTQucG5nP3NlbXQ9/YWlzX2h5YnJpZA" alt="Google">
+            </a>
+            <a id="facebook-login" class="social-button facebook-button" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+        </div>
+        <div class="register-link">
+            ¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>
+        </div>
+    </div>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
