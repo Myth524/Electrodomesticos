@@ -10,10 +10,14 @@ This project involves integrating cloud tools to create a product catalog for an
 - **Analytics:** Monitors user activity with Google Analytics.
 
 ## Technologies Used
-AWS: S3, CloudFront, Cognito
-Contentful: CMS for content management
-Google Analytics: Web analytics tool
-HTML, CSS & JavaScript: Primary technologies for the front end
+**AWS:** S3, CloudFront, Cognito
+
+**Contentful:** CMS for content management
+
+**Google Analytics:** Web analytics 
+tool
+
+**HTML, CSS & JavaScript:** Primary technologies for the front end
 
 ## Landing Page
 ![image](https://github.com/user-attachments/assets/eb1fccab-5cb7-4c66-ad76-8c3eb4d24785)
